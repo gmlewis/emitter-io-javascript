@@ -1,10 +1,12 @@
 {
   "name": "emitter-io",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "description": "NodeJS MQTT client to use with emitter.io platform",
   "main": "lib/emitter.js",
+  "type": "module",
   "typings": "./lib/emitter.d.ts",
   "scripts": {
+    "build": "esbuild lib/emitter.ts --bundle --minify --sourcemap --outfile=lib/emitter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,16 +20,7 @@
   },
   "homepage": "https://github.com/emitter-io/javascript#readme",
   "dependencies": {
+    "esbuild": "^0.14.43",
     "mqtt": "^4.3.7"
-  },
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "grunt": "^1.5.3",
-    "grunt-browserify": "^6.0.0",
-    "grunt-contrib-compress": "^2.0.0",
-    "grunt-contrib-concat": "^2.1.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-uglify": "^5.2.1",
-    "grunt-contrib-watch": "^1.1.0"
   }
 }
