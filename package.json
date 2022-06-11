@@ -1,6 +1,6 @@
 {
   "name": "emitter-io",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "NodeJS MQTT client to use with emitter.io platform",
   "main": "lib/emitter.js",
   "typings": "./lib/emitter.d.ts",
