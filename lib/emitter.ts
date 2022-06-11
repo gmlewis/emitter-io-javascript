@@ -1,4 +1,6 @@
-const mqtt = require('mqtt');
+// https://github.com/mqttjs/MQTT.js/issues/1269
+// const mqtt = require('mqtt');
+import * as mqtt from 'mqtt/dist/mqtt.min';
 
 export class Emitter {
 

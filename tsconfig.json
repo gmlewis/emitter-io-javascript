@@ -5,6 +5,7 @@
     "sourceMap": true,
     "removeComments": false,
     "watch": true,
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true
   }
 }
